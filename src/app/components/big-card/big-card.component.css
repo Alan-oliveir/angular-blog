@@ -1,5 +1,4 @@
 .big__card__container {
-  border: solid 2px aliceblue;
   margin-left: 10px;
   margin-right: 10px;
   width: 400px;
@@ -15,8 +14,15 @@
   font-size: 20px;
 }
 
-.big-card__description > p {
+.big-card__description {
   margin-top: 10px;
-  font-size: 16px;
+}
+
+.big-card__description > p > a {
   color: grey;
+}
+
+.big-card__photo > img {
+  width: 100%;
+  min-width: 400px;
 }
