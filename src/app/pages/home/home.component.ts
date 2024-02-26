@@ -1,13 +1,12 @@
-import { Component } from '@angular/core';
-import { MenuTitleComponent } from '../../components/menu-title/menu-title.component';
-import { BigCardComponent } from '../../components/big-card/big-card.component';
-import { SmallCardComponent } from '../../components/small-card/small-card.component';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
-  standalone: true,
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
-  imports: [MenuTitleComponent, BigCardComponent, SmallCardComponent],
+  styleUrls: ['./home.component.css'],
 })
-export class HomeComponent {}
+export class HomeComponent implements OnInit {
+  constructor() {}
+
+  ngOnInit(): void {}
+}

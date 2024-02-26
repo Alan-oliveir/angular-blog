@@ -1,26 +1,18 @@
 <div class="big__card__container">
   <div class="big-card__photo">
-    <img
-      src="https://www.svgrepo.com/download/508699/landscape-placeholder.svg"
-      alt="big card photo"
-      height="200px"
-    />
+    <img src="{{ photoCover }}" alt="" height="200px" srcset="" />
   </div>
 
   <div class="big-card__title">
-    <h1><a href="#">Título do Artigo</a></h1>
+    <h1>
+      <a [routerLink]="['content', Id]">{{ cardTitle }}</a>
+    </h1>
   </div>
 
   <div class="big-card__description">
     <p>
-      <a href="#">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt
-        est vel justo consectetur, at facilisis enim tempor. Morbi vitae augue
-        at nibh lobortis feugiat. Aliquam ullamcorper tortor a viverra tempus.
-        Maecenas metus mauris, iaculis eu semper et, posuere ut tortor. Maecenas
-        euismod fringilla semper. In aliquet odio mattis arcu fringilla
-        eleifend. Pellentesque commodo ante et risus bibendum, vel lobortis
-        ligula malesuada.
+      <a [routerLink]="['content', Id]">
+        {{ cardDescription }}
       </a>
     </p>
   </div>
